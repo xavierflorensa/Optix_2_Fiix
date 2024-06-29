@@ -1,0 +1,1166 @@
+Name: Assets
+Type: FolderType
+Children:
+- Name: Site_Risoul Iberica
+  Type: Asset
+  Children:
+  - Name: strName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Risoul Iberica"
+  - Name: id
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 53051555
+  - Name: strCode
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "A4"
+  - Name: strAddressParsed
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strTimezone
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Europe/Berlin"
+  - Name: intCategoryID
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 912496
+  - Name: intSuperCategorySysCode
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: intSiteID
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 53051555
+  - Name: intAssetLocationID
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 53051549
+  - Class: Reference
+    Target: g=6fb0fbc52af119e5bfab1e874bda49c2
+    Direction: Forward
+  - Name: strDescription
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strMake
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strModel
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strInventoryCode
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strBinNumber
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strSerialNumber
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strRow
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: bolIsOnline
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: dtUpdated
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-04-27T11:22:07.3150000"
+  - Class: Reference
+    Target: g=7d2443f19a3cff2f721eae8273a808b3
+    Direction: Forward
+  - Class: Reference
+    Target: g=8bc3e60c574a37ebbf1836e1a607438e
+    Direction: Forward
+  - Name: Sts_LastActionResult
+    Type: BaseDataVariableType
+    DataType: String
+  - Class: Reference
+    Target: g=bff9dd95c75b0fe61d791acbb540a855
+    Direction: Forward
+  - Name: Sts_LastActionDatetime
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Class: Reference
+    Target: g=5524cfbcea7fceaa559ff71f0e9c54ed
+    Direction: Forward
+  - Class: Reference
+    Target: g=9a7ca35d5651ec9d2173d204393adb6a
+    Direction: Forward
+  - Name: strAisle
+    Type: BaseDataVariableType
+    DataType: String
+  - Class: Reference
+    Target: g=b9910b75c83390fa2aff7ceed6a2c6ea
+    Direction: Forward
+  - Class: Reference
+    Target: g=a6ec398544140c7a5dc820dd17e28c2b
+    Direction: Forward
+  - Name: AssetDesignTimeLogic
+    Type: NetLogic
+    Children:
+    - Name: BehaviourStartPriority
+      Type: BehaviourStartPriorityVariableType
+      DataType: Byte
+      Value: 180
+    - Class: Reference
+      Target: g=5899b4f38a4685e295f6fa292a4d3102
+      Direction: Forward
+  - Class: Reference
+    Target: g=61426e076f889430134c9c5a1867bd0f
+    Direction: Forward
+  - Name: Maquinas
+    Type: Asset
+    Children:
+    - Name: strName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Maquinas"
+    - Name: id
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53166908
+    - Name: strCode
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "A7"
+    - Name: strAddressParsed
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Granollers, Please select an option, Spain, Spanish State, 08402"
+    - Name: strTimezone
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: intCategoryID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 912496
+    - Name: intSuperCategorySysCode
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 1
+    - Name: intSiteID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53051555
+    - Name: intAssetLocationID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53051555
+    - Class: Reference
+      Target: g=6fb0fbc52af119e5bfab1e874bda49c2
+      Direction: Forward
+    - Name: strDescription
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strMake
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strModel
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strInventoryCode
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strBinNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strSerialNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strRow
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: bolIsOnline
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: dtUpdated
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "2023-05-05T10:40:07.6100000"
+    - Class: Reference
+      Target: g=7d2443f19a3cff2f721eae8273a808b3
+      Direction: Forward
+    - Class: Reference
+      Target: g=8bc3e60c574a37ebbf1836e1a607438e
+      Direction: Forward
+    - Name: Sts_LastActionResult
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=bff9dd95c75b0fe61d791acbb540a855
+      Direction: Forward
+    - Name: Sts_LastActionDatetime
+      Type: BaseDataVariableType
+      DataType: DateTime
+    - Class: Reference
+      Target: g=5524cfbcea7fceaa559ff71f0e9c54ed
+      Direction: Forward
+    - Class: Reference
+      Target: g=9a7ca35d5651ec9d2173d204393adb6a
+      Direction: Forward
+    - Name: strAisle
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=b9910b75c83390fa2aff7ceed6a2c6ea
+      Direction: Forward
+    - Class: Reference
+      Target: g=a6ec398544140c7a5dc820dd17e28c2b
+      Direction: Forward
+    - Name: AssetDesignTimeLogic
+      Type: NetLogic
+      Children:
+      - Name: BehaviourStartPriority
+        Type: BehaviourStartPriorityVariableType
+        DataType: Byte
+        Value: 180
+      - Class: Reference
+        Target: g=5899b4f38a4685e295f6fa292a4d3102
+        Direction: Forward
+    - Class: Reference
+      Target: g=61426e076f889430134c9c5a1867bd0f
+      Direction: Forward
+    - Name: Maquina 2
+      Type: Asset
+      Children:
+      - Name: strName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Maquina 2"
+      - Name: id
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 53166911
+      - Name: strCode
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "A8"
+      - Name: strAddressParsed
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strTimezone
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: intCategoryID
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 912497
+      - Name: intSuperCategorySysCode
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 2
+      - Name: intSiteID
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 53051555
+      - Name: intAssetLocationID
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 53166908
+      - Class: Reference
+        Target: g=6fb0fbc52af119e5bfab1e874bda49c2
+        Direction: Forward
+      - Name: strDescription
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strMake
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strModel
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strInventoryCode
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strBinNumber
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strSerialNumber
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strRow
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: bolIsOnline
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: dtUpdated
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Value: "2023-05-05T11:06:49.4580000"
+      - Class: Reference
+        Target: g=7d2443f19a3cff2f721eae8273a808b3
+        Direction: Forward
+      - Class: Reference
+        Target: g=8bc3e60c574a37ebbf1836e1a607438e
+        Direction: Forward
+      - Name: Sts_LastActionResult
+        Type: BaseDataVariableType
+        DataType: String
+      - Class: Reference
+        Target: g=bff9dd95c75b0fe61d791acbb540a855
+        Direction: Forward
+      - Name: Sts_LastActionDatetime
+        Type: BaseDataVariableType
+        DataType: DateTime
+      - Class: Reference
+        Target: g=5524cfbcea7fceaa559ff71f0e9c54ed
+        Direction: Forward
+      - Class: Reference
+        Target: g=9a7ca35d5651ec9d2173d204393adb6a
+        Direction: Forward
+      - Name: strAisle
+        Type: BaseDataVariableType
+        DataType: String
+      - Class: Reference
+        Target: g=b9910b75c83390fa2aff7ceed6a2c6ea
+        Direction: Forward
+      - Class: Reference
+        Target: g=a6ec398544140c7a5dc820dd17e28c2b
+        Direction: Forward
+      - Name: AssetDesignTimeLogic
+        Type: NetLogic
+        Children:
+        - Name: BehaviourStartPriority
+          Type: BehaviourStartPriorityVariableType
+          DataType: Byte
+          Value: 180
+        - Class: Reference
+          Target: g=5899b4f38a4685e295f6fa292a4d3102
+          Direction: Forward
+      - Class: Reference
+        Target: g=61426e076f889430134c9c5a1867bd0f
+        Direction: Forward
+    - Name: Maquina 1
+      Id: g=a2624cb239ed4366b7210f44d02260b8
+      Type: Asset
+      Children:
+      - Name: strName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Maquina 1"
+      - Name: id
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 50770149
+      - Name: strCode
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "A69"
+      - Name: strAddressParsed
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Granollers, Please select an option, Spain, Spanish State, 08402"
+      - Name: strTimezone
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: intCategoryID
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 912497
+      - Name: intSuperCategorySysCode
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 2
+      - Name: intSiteID
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 53051555
+      - Name: intAssetLocationID
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 53166908
+      - Class: Reference
+        Target: g=6fb0fbc52af119e5bfab1e874bda49c2
+        Direction: Forward
+      - Name: strDescription
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strMake
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strModel
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strInventoryCode
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strBinNumber
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strSerialNumber
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: strRow
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: bolIsOnline
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: dtUpdated
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Value: "2023-09-19T15:50:42.3160000"
+      - Class: Reference
+        Target: g=7d2443f19a3cff2f721eae8273a808b3
+        Direction: Forward
+      - Class: Reference
+        Target: g=8bc3e60c574a37ebbf1836e1a607438e
+        Direction: Forward
+      - Name: Sts_LastActionResult
+        Type: BaseDataVariableType
+        DataType: String
+      - Class: Reference
+        Target: g=bff9dd95c75b0fe61d791acbb540a855
+        Direction: Forward
+      - Name: Sts_LastActionDatetime
+        Type: BaseDataVariableType
+        DataType: DateTime
+      - Class: Reference
+        Target: g=5524cfbcea7fceaa559ff71f0e9c54ed
+        Direction: Forward
+      - Class: Reference
+        Target: g=9a7ca35d5651ec9d2173d204393adb6a
+        Direction: Forward
+      - Name: strAisle
+        Type: BaseDataVariableType
+        DataType: String
+      - Class: Reference
+        Target: g=b9910b75c83390fa2aff7ceed6a2c6ea
+        Direction: Forward
+      - Class: Reference
+        Target: g=a6ec398544140c7a5dc820dd17e28c2b
+        Direction: Forward
+      - Name: AssetDesignTimeLogic
+        Type: NetLogic
+        Children:
+        - Name: BehaviourStartPriority
+          Type: BehaviourStartPriorityVariableType
+          DataType: Byte
+          Value: 180
+        - Class: Reference
+          Target: g=5899b4f38a4685e295f6fa292a4d3102
+          Direction: Forward
+      - Class: Reference
+        Target: g=61426e076f889430134c9c5a1867bd0f
+        Direction: Forward
+      - Name: AnalogVariable1
+        Type: AnalogItemType
+        DataType: Float
+        Children:
+        - Name: EURange
+          Type: RangeType
+          DataType: Range
+          Children:
+          - Name: Low
+            Type: BaseVariableType
+            DataType: Double
+            ReferenceType: HasProperty
+          - Name: High
+            Type: BaseVariableType
+            DataType: Double
+            ReferenceType: HasProperty
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            ReferenceType: HasProperty
+            Value: 640134
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+            ReferenceType: HasProperty
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+            ReferenceType: HasProperty
+          - Name: NamespaceIndex
+            Type: BaseVariableType
+            DataType: NamespaceIndex
+            ReferenceType: HasProperty
+            Value: 20
+  - Name: Drilling machine
+    Type: Asset
+    Children:
+    - Name: strName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Drilling machine"
+    - Name: id
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 56235024
+    - Name: strCode
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "A12"
+    - Name: strAddressParsed
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strTimezone
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: intCategoryID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 912497
+    - Name: intSuperCategorySysCode
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 2
+    - Name: intSiteID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53051555
+    - Name: intAssetLocationID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53051555
+    - Class: Reference
+      Target: g=6fb0fbc52af119e5bfab1e874bda49c2
+      Direction: Forward
+    - Name: strDescription
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strMake
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strModel
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strInventoryCode
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strBinNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strSerialNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strRow
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: bolIsOnline
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: dtUpdated
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "2023-10-19T12:35:57.6860000"
+    - Class: Reference
+      Target: g=7d2443f19a3cff2f721eae8273a808b3
+      Direction: Forward
+    - Class: Reference
+      Target: g=8bc3e60c574a37ebbf1836e1a607438e
+      Direction: Forward
+    - Name: Sts_LastActionResult
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=bff9dd95c75b0fe61d791acbb540a855
+      Direction: Forward
+    - Name: Sts_LastActionDatetime
+      Type: BaseDataVariableType
+      DataType: DateTime
+    - Class: Reference
+      Target: g=5524cfbcea7fceaa559ff71f0e9c54ed
+      Direction: Forward
+    - Class: Reference
+      Target: g=9a7ca35d5651ec9d2173d204393adb6a
+      Direction: Forward
+    - Name: strAisle
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=b9910b75c83390fa2aff7ceed6a2c6ea
+      Direction: Forward
+    - Class: Reference
+      Target: g=a6ec398544140c7a5dc820dd17e28c2b
+      Direction: Forward
+    - Name: AssetDesignTimeLogic
+      Type: NetLogic
+      Children:
+      - Name: BehaviourStartPriority
+        Type: BehaviourStartPriorityVariableType
+        DataType: Byte
+        Value: 180
+      - Class: Reference
+        Target: g=5899b4f38a4685e295f6fa292a4d3102
+        Direction: Forward
+    - Class: Reference
+      Target: g=61426e076f889430134c9c5a1867bd0f
+      Direction: Forward
+  - Name: Valvula
+    Type: Asset
+    Children:
+    - Name: strName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Valvula"
+    - Name: id
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 57234092
+    - Name: strCode
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "V1"
+    - Name: strAddressParsed
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strTimezone
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: intCategoryID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 912497
+    - Name: intSuperCategorySysCode
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 2
+    - Name: intSiteID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53051555
+    - Name: intAssetLocationID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53051555
+    - Class: Reference
+      Target: g=6fb0fbc52af119e5bfab1e874bda49c2
+      Direction: Forward
+    - Name: strDescription
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strMake
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strModel
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strInventoryCode
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strBinNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strSerialNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strRow
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: bolIsOnline
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: dtUpdated
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "2023-12-14T08:00:02.3390000"
+    - Class: Reference
+      Target: g=7d2443f19a3cff2f721eae8273a808b3
+      Direction: Forward
+    - Class: Reference
+      Target: g=8bc3e60c574a37ebbf1836e1a607438e
+      Direction: Forward
+    - Name: Sts_LastActionResult
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=bff9dd95c75b0fe61d791acbb540a855
+      Direction: Forward
+    - Name: Sts_LastActionDatetime
+      Type: BaseDataVariableType
+      DataType: DateTime
+    - Class: Reference
+      Target: g=5524cfbcea7fceaa559ff71f0e9c54ed
+      Direction: Forward
+    - Class: Reference
+      Target: g=9a7ca35d5651ec9d2173d204393adb6a
+      Direction: Forward
+    - Name: strAisle
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=b9910b75c83390fa2aff7ceed6a2c6ea
+      Direction: Forward
+    - Class: Reference
+      Target: g=a6ec398544140c7a5dc820dd17e28c2b
+      Direction: Forward
+    - Name: AssetDesignTimeLogic
+      Type: NetLogic
+      Children:
+      - Name: BehaviourStartPriority
+        Type: BehaviourStartPriorityVariableType
+        DataType: Byte
+        Value: 180
+      - Class: Reference
+        Target: g=5899b4f38a4685e295f6fa292a4d3102
+        Direction: Forward
+    - Class: Reference
+      Target: g=61426e076f889430134c9c5a1867bd0f
+      Direction: Forward
+  - Name: Datacenter
+    Type: Asset
+    Children:
+    - Name: strName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Datacenter"
+    - Name: id
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53838528
+    - Name: strCode
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "A9"
+    - Name: strAddressParsed
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Granollers, Please select an option, Spain, Spanish State, 08402"
+    - Name: strTimezone
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: intCategoryID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 912496
+    - Name: intSuperCategorySysCode
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 1
+    - Name: intSiteID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53051555
+    - Name: intAssetLocationID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53051555
+    - Class: Reference
+      Target: g=6fb0fbc52af119e5bfab1e874bda49c2
+      Direction: Forward
+    - Name: strDescription
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strMake
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strModel
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strInventoryCode
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strBinNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strSerialNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strRow
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: bolIsOnline
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: dtUpdated
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "2023-06-13T14:21:36.2040000"
+    - Class: Reference
+      Target: g=7d2443f19a3cff2f721eae8273a808b3
+      Direction: Forward
+    - Class: Reference
+      Target: g=8bc3e60c574a37ebbf1836e1a607438e
+      Direction: Forward
+    - Name: Sts_LastActionResult
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=bff9dd95c75b0fe61d791acbb540a855
+      Direction: Forward
+    - Name: Sts_LastActionDatetime
+      Type: BaseDataVariableType
+      DataType: DateTime
+    - Class: Reference
+      Target: g=5524cfbcea7fceaa559ff71f0e9c54ed
+      Direction: Forward
+    - Class: Reference
+      Target: g=9a7ca35d5651ec9d2173d204393adb6a
+      Direction: Forward
+    - Name: strAisle
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=b9910b75c83390fa2aff7ceed6a2c6ea
+      Direction: Forward
+    - Class: Reference
+      Target: g=a6ec398544140c7a5dc820dd17e28c2b
+      Direction: Forward
+    - Name: AssetDesignTimeLogic
+      Type: NetLogic
+      Children:
+      - Name: BehaviourStartPriority
+        Type: BehaviourStartPriorityVariableType
+        DataType: Byte
+        Value: 180
+      - Class: Reference
+        Target: g=5899b4f38a4685e295f6fa292a4d3102
+        Direction: Forward
+    - Class: Reference
+      Target: g=61426e076f889430134c9c5a1867bd0f
+      Direction: Forward
+- Name: Site_(No Site)
+  Type: Asset
+  Children:
+  - Name: strName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "(No Site)"
+  - Name: id
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 50545826
+  - Name: strCode
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strAddressParsed
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strTimezone
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: intCategoryID
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 912496
+  - Name: intSuperCategorySysCode
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: intSiteID
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 50545826
+  - Name: intAssetLocationID
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Class: Reference
+    Target: g=6fb0fbc52af119e5bfab1e874bda49c2
+    Direction: Forward
+  - Name: strDescription
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "No Site is the catch-all for all assets and facilities that are not assigned to a specific facility or site."
+  - Name: strMake
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strModel
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strInventoryCode
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strBinNumber
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strSerialNumber
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: strRow
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: bolIsOnline
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: dtUpdated
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-01-30T07:21:56.9120000"
+  - Class: Reference
+    Target: g=7d2443f19a3cff2f721eae8273a808b3
+    Direction: Forward
+  - Class: Reference
+    Target: g=8bc3e60c574a37ebbf1836e1a607438e
+    Direction: Forward
+  - Name: Sts_LastActionResult
+    Type: BaseDataVariableType
+    DataType: String
+  - Class: Reference
+    Target: g=bff9dd95c75b0fe61d791acbb540a855
+    Direction: Forward
+  - Name: Sts_LastActionDatetime
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Class: Reference
+    Target: g=5524cfbcea7fceaa559ff71f0e9c54ed
+    Direction: Forward
+  - Class: Reference
+    Target: g=9a7ca35d5651ec9d2173d204393adb6a
+    Direction: Forward
+  - Name: strAisle
+    Type: BaseDataVariableType
+    DataType: String
+  - Class: Reference
+    Target: g=b9910b75c83390fa2aff7ceed6a2c6ea
+    Direction: Forward
+  - Class: Reference
+    Target: g=a6ec398544140c7a5dc820dd17e28c2b
+    Direction: Forward
+  - Name: AssetDesignTimeLogic
+    Type: NetLogic
+    Children:
+    - Name: BehaviourStartPriority
+      Type: BehaviourStartPriorityVariableType
+      DataType: Byte
+      Value: 180
+    - Class: Reference
+      Target: g=5899b4f38a4685e295f6fa292a4d3102
+      Direction: Forward
+  - Class: Reference
+    Target: g=61426e076f889430134c9c5a1867bd0f
+    Direction: Forward
+  - Name: Spain
+    Type: Asset
+    Children:
+    - Name: strName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Spain"
+    - Name: id
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53051549
+    - Name: strCode
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "A3"
+    - Name: strAddressParsed
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Granollers, Please select an option, Spain, Spanish State, 08402"
+    - Name: strTimezone
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: intCategoryID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 912504
+    - Name: intSuperCategorySysCode
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 10
+    - Name: intSiteID
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: intAssetLocationID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 50545826
+    - Class: Reference
+      Target: g=6fb0fbc52af119e5bfab1e874bda49c2
+      Direction: Forward
+    - Name: strDescription
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strMake
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strModel
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strInventoryCode
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strBinNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strSerialNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strRow
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: bolIsOnline
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: dtUpdated
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "2023-04-27T11:22:24.3320000"
+    - Class: Reference
+      Target: g=7d2443f19a3cff2f721eae8273a808b3
+      Direction: Forward
+    - Class: Reference
+      Target: g=8bc3e60c574a37ebbf1836e1a607438e
+      Direction: Forward
+    - Name: Sts_LastActionResult
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=bff9dd95c75b0fe61d791acbb540a855
+      Direction: Forward
+    - Name: Sts_LastActionDatetime
+      Type: BaseDataVariableType
+      DataType: DateTime
+    - Class: Reference
+      Target: g=5524cfbcea7fceaa559ff71f0e9c54ed
+      Direction: Forward
+    - Class: Reference
+      Target: g=9a7ca35d5651ec9d2173d204393adb6a
+      Direction: Forward
+    - Name: strAisle
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=b9910b75c83390fa2aff7ceed6a2c6ea
+      Direction: Forward
+    - Class: Reference
+      Target: g=a6ec398544140c7a5dc820dd17e28c2b
+      Direction: Forward
+    - Name: AssetDesignTimeLogic
+      Type: NetLogic
+      Children:
+      - Name: BehaviourStartPriority
+        Type: BehaviourStartPriorityVariableType
+        DataType: Byte
+        Value: 180
+      - Class: Reference
+        Target: g=5899b4f38a4685e295f6fa292a4d3102
+        Direction: Forward
+    - Class: Reference
+      Target: g=61426e076f889430134c9c5a1867bd0f
+      Direction: Forward
+  - Name: Patchcord
+    Type: Asset
+    Children:
+    - Name: strName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Patchcord"
+    - Name: id
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 53838575
+    - Name: strCode
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "A11"
+    - Name: strAddressParsed
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Granollers, Please select an option, Spain, Spanish State, 08402"
+    - Name: strTimezone
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: intCategoryID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 912500
+    - Name: intSuperCategorySysCode
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 4
+    - Name: intSiteID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 50545826
+    - Name: intAssetLocationID
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 50545826
+    - Class: Reference
+      Target: g=6fb0fbc52af119e5bfab1e874bda49c2
+      Direction: Forward
+    - Name: strDescription
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strMake
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strModel
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strInventoryCode
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strBinNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strSerialNumber
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: strRow
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: bolIsOnline
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: dtUpdated
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "2024-03-21T09:15:18.2850000"
+    - Class: Reference
+      Target: g=7d2443f19a3cff2f721eae8273a808b3
+      Direction: Forward
+    - Class: Reference
+      Target: g=8bc3e60c574a37ebbf1836e1a607438e
+      Direction: Forward
+    - Name: Sts_LastActionResult
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=bff9dd95c75b0fe61d791acbb540a855
+      Direction: Forward
+    - Name: Sts_LastActionDatetime
+      Type: BaseDataVariableType
+      DataType: DateTime
+    - Class: Reference
+      Target: g=5524cfbcea7fceaa559ff71f0e9c54ed
+      Direction: Forward
+    - Class: Reference
+      Target: g=9a7ca35d5651ec9d2173d204393adb6a
+      Direction: Forward
+    - Name: strAisle
+      Type: BaseDataVariableType
+      DataType: String
+    - Class: Reference
+      Target: g=b9910b75c83390fa2aff7ceed6a2c6ea
+      Direction: Forward
+    - Class: Reference
+      Target: g=a6ec398544140c7a5dc820dd17e28c2b
+      Direction: Forward
+    - Name: AssetDesignTimeLogic
+      Type: NetLogic
+      Children:
+      - Name: BehaviourStartPriority
+        Type: BehaviourStartPriorityVariableType
+        DataType: Byte
+        Value: 180
+      - Class: Reference
+        Target: g=5899b4f38a4685e295f6fa292a4d3102
+        Direction: Forward
+    - Class: Reference
+      Target: g=61426e076f889430134c9c5a1867bd0f
+      Direction: Forward

@@ -1,0 +1,8 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: raI_Fiix_1_00_Model/raI_Fiix_1_00_Model.yaml
+- Name: WorkingHoursOptix
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 1400.0

@@ -1,0 +1,49 @@
+Name: AssetEventTypes
+Type: FolderType
+Children:
+- Name: 'OH01 - Overheating'
+  Type: AssetEventType
+  Children:
+  - Name: id
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 209612
+  - Name: strEventName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Overheating"
+  - Name: strUniqueKey
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OH01"
+  - Name: strEventCode
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "OH01"
+  - Name: strEventDescription
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Overheating from automation system"
+- Name: 'NF01 - Network Failure'
+  Type: AssetEventType
+  Children:
+  - Name: id
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 212704
+  - Name: strEventName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Network Failure"
+  - Name: strUniqueKey
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "NF01"
+  - Name: strEventCode
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "NF01"
+  - Name: strEventDescription
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Network failure on data center"

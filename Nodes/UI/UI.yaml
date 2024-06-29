@@ -1,0 +1,3697 @@
+Name: UI
+Type: UICategoryFolder
+Children:
+- Name: DefaultStyleSheet
+  Type: StyleSheet
+  Children:
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+- Name: NativePresentationEngine
+  Type: NativePresentationEngine
+  ReferenceType: HasOrderedComponent
+  Children:
+  - Name: EnableVirtualKeyboard
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: StartWindow
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_2_Fiix/UI/MainWindow"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Window"
+  - Name: StyleSheet
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_2_Fiix/UI/ISAStyleSheet1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Name: StartingUser
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Users/Anonymous"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+  - Name: Sessions
+    Type: BaseObjectType
+- Name: MainWindow
+  Id: g=01a7e8933afd7c95fe894b0859308138
+  Supertype: Window
+  Children:
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1420.0
+  - Name: Height
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 680.0
+  - Name: Caption
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Optix_2_Fiix@BrowseName"
+  - Name: FiixAssetButton1
+    Type: raI_FiixAsset_1_00_Nav
+    Children:
+    - Name: Button
+      Type: raSDK1_NavExplicit
+      Children:
+      - Name: Cfg_CloseCurrentDisplay
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Cfg_CloseCurrentDisplay"
+      - Name: Cfg_DialogBox
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Cfg_DialogBox@Pointer"
+      - Name: Ref_Tag
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Ref_Tag@Pointer"
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../raSDK1_NL_NavExplicit@NodeId"
+            - Name: Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "NavExplicit"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+      - Name: raSDK1_NL_NavExplicit
+        Type: NetLogic
+        Children:
+        - Class: Reference
+          Target: g=36fdb94be20ce463c087d40de3c25fa0
+          Direction: Forward
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Cfg_Label"
+    - Name: Cfg_CloseCurrentDisplay
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: Cfg_DialogBox
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: "/Objects/Optix_2_Fiix/UI/raI_FiixAsset_1_00_UI/raI_FiixAsset_1_00_Faceplate"
+    - Name: Ref_Tag
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: "/Objects/Optix_2_Fiix/Model/raI_Fiix_1_00_Model/Assets/Site_Risoul Iberica/Maquinas/Maquina 1"
+    - Name: Cfg_Label
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"../Ref_Tag@BrowseName"}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../Ref_Tag@BrowseName"
+    - Name: hl_OnlineSts
+      Type: RowLayout
+      Children:
+      - Name: img_OnlineSts
+        Type: Image
+        Children:
+        - Name: Path
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          Value: "ns=20;%PROJECTDIR%/res/Sts_StateRunning.svg"
+          Children:
+          - Name: KeyValueConverter1
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Ref_Tag/bolIsOnline"
+            - Name: Pairs
+              Type: BaseObjectType
+              Children:
+              - Name: Pair
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=20;%PROJECTDIR%/res/Sts_NotReady_16.svg"
+              - Name: Pair1
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=20;%PROJECTDIR%/res/Sts_StateRunning.svg"
+        - Name: DynamicColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../FillColor"
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+      - Name: sd_OnlineSts
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: KeyValueConverter1
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Ref_Tag/bolIsOnline"
+            - Name: Pairs
+              Type: BaseObjectType
+              Children:
+              - Name: Pair
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Offline"
+              - Name: Pair1
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Online"
+    - Name: img_Chevron
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=20;%PROJECTDIR%/res/Chevron2.svg"
+      - Name: DynamicColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6a6a6a"
+  - Name: FiixSummaryButton1
+    Type: raI_FiixSummary_1_00_Nav
+    Children:
+    - Name: Button
+      Type: raSDK1_NavExplicit
+      Children:
+      - Name: Cfg_CloseCurrentDisplay
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Cfg_CloseCurrentDisplay"
+      - Name: Cfg_DialogBox
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Cfg_DialogBox@Pointer"
+      - Name: Ref_Tag
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Ref_Tag@Pointer"
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../raSDK1_NL_NavExplicit@NodeId"
+            - Name: Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "NavExplicit"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+      - Name: raSDK1_NL_NavExplicit
+        Type: NetLogic
+        Children:
+        - Class: Reference
+          Target: g=36fdb94be20ce463c087d40de3c25fa0
+          Direction: Forward
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Cfg_Label"
+    - Name: Cfg_CloseCurrentDisplay
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: Cfg_DialogBox
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: "/Objects/Optix_2_Fiix/UI/raI_FiixSummary_1_00_UI/raI_FiixSummary_1_00_Faceplate"
+    - Name: Ref_Tag
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "..@NodeId"
+    - Name: Cfg_Label
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Fiix Data Summary"}
+    - Name: img_Chevron
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=20;%PROJECTDIR%/res/Chevron2.svg"
+      - Name: DynamicColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6a6a6a"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 2.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=20;%PROJECTDIR%/Logo Optix.JPG"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 250.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 160.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+  - Name: Image2
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=20;%PROJECTDIR%/Logo.JPG"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 230.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 140.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 380.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -30.0
+  - Name: Image3
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=20;%PROJECTDIR%/Logo Fiix.JPG"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 620.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+- File: Screens/Screens.yaml
+- File: raI_FiixAsset_1_00_UI/raI_FiixAsset_1_00_UI.yaml
+- Name: raSDK1_DialogBoxBase
+  Id: g=f1dd40bdda495b46c2ef5c2496baf174
+  Supertype: Dialog
+  Description: {"LocaleId":"en-US","Text":"Faceplate dialog base type with predefined alias, border, header, and background."}
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=5;i=519
+    Direction: Forward
+  - Name: Modal
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+  - Name: Opacity
+    Type: BaseVariableType
+    DataType: Float
+    ModellingRule: Optional
+    Value: 100.0
+  - Name: raSDK1_DialogBox
+    Type: Alias
+    DataType: NodeId
+    Description: {"LocaleId":"en-US","Text":"Instruction Backing Tag"}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: Canvas
+    Type: Screen
+    Children:
+    - Name: VerticalLayout
+      Type: ColumnLayout
+      Children:
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: Header
+        Type: Rectangle
+        Children:
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: -1.0
+        - Name: BorderThickness
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#afafaf"
+        - Name: MoveTarget
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@NodeId"
+        - Name: Opacity
+          Type: BaseVariableType
+          DataType: Float
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: HorizontalLayout
+          Type: RowLayout
+          Children:
+          - Name: MoveTarget
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -1.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: Title
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: StringFormatter1
+                Type: StringFormatter
+                Children:
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"{0} - {1}"}
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{raSDK1_DialogBox}/Ref_Tag@BrowseName"
+                - Name: ns=3;Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{raSDK1_DialogBox}/Ref_Tag@Description"
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 350.0
+            - Name: TextVerticalAlignment
+              Type: BaseVariableType
+              DataType: TextVerticalAlignment
+              ModellingRule: Optional
+              Value: 1
+            - Name: WordWrap
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+            - Name: FontFamily
+              Type: BaseDataVariableType
+              DataType: Font
+              ModellingRule: Optional
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 8.0
+            - Name: Style
+              Type: BaseDataVariableType
+              DataType: String
+              ModellingRule: Optional
+              Value: "Heading"
+            - Name: Elide
+              Type: BaseDataVariableType
+              DataType: ElideEnum
+              ModellingRule: Optional
+              Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 8.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 2.0
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 2.0
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 2.0
+          - Name: nav_Help
+            Type: Button
+            Children:
+            - Name: ImagePath
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              ModellingRule: Optional
+              Value: "ns=20;%PROJECTDIR%/res/Nav_Help_Icon_border.svg"
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 32.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 32.0
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../../../../../HelpScreen/Visible@NodeId"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: Value
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+                      Value: true
+                    - Name: ArrayIndex
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: Style
+              Type: BaseDataVariableType
+              DataType: String
+              ModellingRule: Optional
+              Value: "Transparent"
+          - Name: nav_Close
+            Type: Button
+            Children:
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 32.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 32.0
+            - Name: ImagePath
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              ModellingRule: Optional
+              Value: "ns=20;%PROJECTDIR%/res/Nav_Close_Icon_border.svg"
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../..@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Close"
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: Style
+              Type: BaseDataVariableType
+              DataType: String
+              ModellingRule: Optional
+              Value: "Transparent"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 2.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 2.0
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 2.0
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 2.0
+      - Name: DisplayPanel
+        Type: Panel
+        Children:
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 2.0
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#afafaf"
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 2
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 2
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+  - Name: MoveTarget
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+  - Name: Cfg_HelpPanel
+    Type: BaseDataVariableType
+    DataType: NodeId
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1300.0
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 410.0
+  - Name: HelpScreen
+    Type: Screen
+    Children:
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 410.0
+    - Name: Border
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#afafaf"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#e0e0e0"
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 8.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: Header
+        Type: Rectangle
+        Children:
+        - Name: HorizontalLayout
+          Type: RowLayout
+          Children:
+          - Name: Title
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../Canvas/VerticalLayout/Header/HorizontalLayout/Title/Text"
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 8.0
+            - Name: TextVerticalAlignment
+              Type: BaseVariableType
+              DataType: TextVerticalAlignment
+              ModellingRule: Optional
+              Value: 1
+            - Name: WordWrap
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+              Value: true
+            - Name: Style
+              Type: BaseDataVariableType
+              DataType: String
+              ModellingRule: Optional
+              Value: "Heading"
+          - Name: MoveTarget
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Close
+            Type: Button
+            Children:
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../../../../Visible@NodeId"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: Value
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                    - Name: ArrayIndex
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 32.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 32.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: ImagePath
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              ModellingRule: Optional
+              Value: "ns=20;%PROJECTDIR%/res/Nav_Close_Icon_border.svg"
+            - Name: Style
+              Type: BaseDataVariableType
+              DataType: String
+              ModellingRule: Optional
+              Value: "Transparent"
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#afafaf"
+        - Name: MoveTarget
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../..@NodeId"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: -1.0
+      - Name: HelpPanelLoader
+        Type: PanelLoader
+        Children:
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Cfg_HelpPanel@Pointer"
+        - Name: CurrentPanel
+          Type: NodePointer
+          DataType: NodeId
+          AccessLevel: Read
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+        - Class: Reference
+          Target: ns=5;i=478
+          Direction: Forward
+      - Name: Footer
+        Type: Rectangle
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: BorderThickness
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#afafaf"
+        - Name: MoveTarget
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../..@NodeId"
+        - Name: Opacity
+          Type: BaseVariableType
+          DataType: Float
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: Version
+          Type: RowLayout
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -1.0
+          - Name: VerticalLayout
+            Type: ColumnLayout
+            Children:
+            - Name: Description
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../Cfg_Description"
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: Style
+                Type: BaseDataVariableType
+                DataType: String
+                ModellingRule: Optional
+                Value: "Data Label"
+            - Name: NameAndVersion
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Format
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    ReferenceType: HasParameter
+                    ModellingRule: Optional
+                    Value: {"LocaleId":"en-US","Text":"{0}  |  Version: {1}"}
+                  - Name: ns=3;Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../..@BrowseName"
+                  - Name: ns=3;Source1
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../../Cfg_ObjectVersion"
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: Style
+                Type: BaseDataVariableType
+                DataType: String
+                ModellingRule: Optional
+                Value: "Data Label"
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 4.0
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 4.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 2.0
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 2.0
+          - Name: VerticalLayout1
+            Type: ColumnLayout
+            Children:
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 50.0
+            - Name: Copyright
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"Copyright © Rockwell Automation, Inc.  All Rights Reserved"}
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: TextVerticalAlignment
+                Type: BaseVariableType
+                DataType: TextVerticalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: Style
+                Type: BaseDataVariableType
+                DataType: String
+                ModellingRule: Optional
+                Value: "Data Label"
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 1
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 16.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Name: Cfg_ObjectVersion
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Cfg_Description
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+- Name: raSDK1_Nav_LbL_ByExplicit
+  Id: g=b0001fd8d2159b84943a343b7a27d6a4
+  Supertype: Panel
+  Description: {"LocaleId":"en-US","Text":"Button with label to navigate to dialog box explicitly. The instruction backing tag is linked to Ref_Tag, and the dialog box is specified by Cfg_DialogBox."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 128.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 56.0
+  - Name: Button
+    Type: raSDK1_NavExplicit
+    Children:
+    - Name: Cfg_CloseCurrentDisplay
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_CloseCurrentDisplay"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Cfg_DialogBox
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_DialogBox@Pointer"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Ref_Tag
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Ref_Tag@Pointer"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../raSDK1_NL_NavExplicit@NodeId"
+          - Name: Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "NavExplicit"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+    - Name: raSDK1_NL_NavExplicit
+      Type: NetLogic
+      Children:
+      - Class: Reference
+        Target: g=36fdb94be20ce463c087d40de3c25fa0
+        Direction: Forward
+    - Name: TextPosition
+      Type: BaseDataVariableType
+      DataType: Position
+      ModellingRule: Optional
+      Value: 3
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_Label"
+    - Name: WordWrap
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: Elide
+      Type: BaseDataVariableType
+      DataType: ElideEnum
+      ModellingRule: Optional
+  - Name: Cfg_CloseCurrentDisplay
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Close current dialog box on open of new dialog box."}
+  - Name: Cfg_DialogBox
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Description: {"LocaleId":"en-US","Text":"Dialog box to be opened."}
+  - Name: Ref_Tag
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Description: {"LocaleId":"en-US","Text":"Instruction Backing Tag"}
+  - Name: Cfg_Label
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"LocaleId":"en-US","Text":"Text description of destination."}
+    Value: {"LocaleId":"en-US","Text":"Label"}
+  - Name: img_Chevron
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=20;%PROJECTDIR%/res/Chevron2.svg"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 12.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 16.0
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 4.0
+    - Name: DynamicColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#6a6a6a"
+- Name: raSDK1_NavExplicit
+  Id: g=9e6633f49cc865ab9ed9b3933aa3a48f
+  Supertype: Button
+  Description: {"LocaleId":"en-US","Text":"Navigate to dialog box explicitly. The instruction backing tag is linked to Ref_Tag, and the dialog box is specified by Cfg_DialogBox."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Cfg_CloseCurrentDisplay
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Close current dialog box on open of new dialog box."}
+  - Name: Cfg_DialogBox
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Description: {"LocaleId":"en-US","Text":"Dialog box to be opened."}
+  - Name: Ref_Tag
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Description: {"LocaleId":"en-US","Text":"Instruction backing tag."}
+  - Name: MouseClickEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=3;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../raSDK1_NL_NavExplicit@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: ns=3;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "NavExplicit"
+    - Name: EventArguments
+      Type: MouseClickEvent
+      Children:
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+  - Name: raSDK1_NL_NavExplicit
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: NavExplicit
+      Id: g=36fdb94be20ce463c087d40de3c25fa0
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: Style
+    Type: BaseDataVariableType
+    DataType: String
+    ModellingRule: Optional
+    Value: "Navigation"
+- Name: raSDK1_SD_LblValHorizontal
+  Id: g=827d0cf8035526c027de44c920180b19
+  Supertype: RowLayout
+  Description: {"LocaleId":"en-US","Text":"Label and value inline; left justified."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_Label"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+    - Name: Elide
+      Type: BaseDataVariableType
+      DataType: ElideEnum
+      ModellingRule: Optional
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Data Label"
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      Value: -1.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Set_LabelWidth"
+  - Name: Value
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Inp_String"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Live Data"
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "if({0},\"Live Data Primary\",\"Live Data\")"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Cfg_DisplayAsPrimary"
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: Cfg_Label
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"LocaleId":"en-US","Text":"Text description of displayed value."}
+    Value: {"LocaleId":"en-US","Text":"Label"}
+  - Name: Inp_String
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"String value to be displayed."}
+    Value: "String"
+  - Name: Cfg_DisplayAsPrimary
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Display the value as 'primary' data:  False = Normal weight with value font size equal to Set_SessionFontSize, True = Bold weight with value font size 20% larger than Set_SessionFontSize."}
+  - Name: HorizontalGap
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 4.0
+  - Name: Set_LabelWidth
+    Type: BaseDataVariableType
+    DataType: Int32
+    Description: {"LocaleId":"en-US","Text":"Label width defined to easily align values"}
+    Value: 100
+- Name: raSDK1_Tgl_Label
+  Id: g=5f24c83940bfb1491da65432241b5d09
+  Supertype: RowLayout
+  Description: {"LocaleId":"en-US","Text":"Toggle switch with label (left)."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Cfg_Label
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"LocaleId":"en-US","Text":"Text description of the option / control."}
+    Value: {"LocaleId":"en-US","Text":"Label"}
+  - Name: Ref_Variable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Variable or tag assigned to the selector."}
+  - Name: Label
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_Label"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: WordWrap
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Default"
+  - Name: Switch
+    Type: Switch
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Ref_Variable"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 8.0
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Set_Enabled"
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Default"
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+  - Name: Set_Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Enables / disables interaction with the user: False = Disabled, True = Enabled."}
+    Value: true
+  - Name: Sts_Checked
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Selector status: False = Off, True = On."}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Switch/Checked"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+- Name: raSDK1_Tgl_LabelAndStateLabels_Inline
+  Id: g=66164110bd357130968dc066fd8e2e62
+  Supertype: RowLayout
+  Description: {"LocaleId":"en-US","Text":"Toggle switch with label (left) and text descriptors for false / true states."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Cfg_Label
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"LocaleId":"en-US","Text":"Text description of the option / control."}
+    Value: {"LocaleId":"en-US","Text":"Label"}
+  - Name: Ref_Variable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Variable or tag assigned to the selector."}
+  - Name: Label
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_Label"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: WordWrap
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Default"
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: Set_Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Enables / disables interaction with the user: False = Disabled, True = Enabled."}
+    Value: true
+  - Name: Cfg_FalseDescriptor
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"LocaleId":"en-US","Text":"Text description of the false (off) state."}
+    Value: {"LocaleId":"en-US","Text":"Off"}
+  - Name: Cfg_TrueDescriptor
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"LocaleId":"en-US","Text":"Text description of the true (on) state."}
+    Value: {"LocaleId":"en-US","Text":"On"}
+  - Name: Sts_Checked
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Selector status: False = Off, True = On."}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../grp_Switch/Switch/Checked"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: HorizontalGap
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 8.0
+  - Name: grp_Switch
+    Type: RowLayout
+    Children:
+    - Name: lbl_OFF
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Cfg_FalseDescriptor"
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "Data Label"
+    - Name: Switch
+      Type: Switch
+      Children:
+      - Name: Checked
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Ref_Variable"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Set_Enabled"
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+    - Name: lbl_ON
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Cfg_TrueDescriptor"
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "Data Label"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalGap
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 4.0
+- File: raI_FiixSummary_1_00_UI/raI_FiixSummary_1_00_UI.yaml
+- Name: raI_Summary_1_00_BaseFaceplate
+  Id: g=c3f90efb058fd3e1f6b354fe6297fc58
+  Supertype: raSDK1_DialogBoxBase
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=5;i=519
+    Direction: Forward
+  - Name: raSDK1_DialogBox
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: Canvas
+    Type: Screen
+    Children:
+    - Name: VerticalLayout
+      Type: ColumnLayout
+      Children:
+      - Name: Header
+        Type: Rectangle
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#afafaf"
+        - Name: MoveTarget
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@NodeId"
+        - Name: HorizontalLayout
+          Type: RowLayout
+          Children:
+          - Name: MoveTarget
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: TitleUsingDescription
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../Cfg_Description"
+            - Name: Style
+              Type: BaseDataVariableType
+              DataType: String
+              ModellingRule: Optional
+              Value: "Heading"
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 8.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: VerticalAlignment
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: TextVerticalAlignment
+              Type: BaseVariableType
+              DataType: TextVerticalAlignment
+              ModellingRule: Optional
+              Value: 1
+            - Name: WordWrap
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+              Value: true
+          - Name: Title
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: StringFormatter1
+                Type: StringFormatter
+                Children:
+                - Name: Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{raSDK1_DialogBox}/Ref_Tag@BrowseName"
+                - Name: Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{raSDK1_DialogBox}/Ref_Tag@Description"
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+          - Name: nav_Help
+            Type: Button
+            Children:
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/UICommands"
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "OpenDialog"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: Dialog
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Value: {"IdType":2,"Id":"3045a2cb6c8fa6fe5dad49569552a8bc","Namespace":20}
+                    - Name: AliasNode
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      ValueRank: ScalarOrOneDimension
+                    - Name: ParentItem
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../..@NodeId"
+                  - Name: OutputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: DialogNodeId
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+              Value: true
+          - Name: nav_Close
+            Type: Button
+            Children:
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../..@NodeId"
+                  - Name: Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Close"
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
+      - Name: DisplayPanel
+        Type: Panel
+        Children:
+        - Name: LogoImage
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=20;%PROJECTDIR%/res/RA-PLEX-logo_black-blue.svg"
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 100.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 1
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 678.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 2.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 2.0
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#e0e0e0"
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#afafaf"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1340.0
+  - Name: MoveTarget
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+  - Name: Cfg_HelpPanel
+    Type: BaseDataVariableType
+    DataType: NodeId
+  - Name: HelpScreen
+    Type: Screen
+    Children:
+    - Name: Border
+      Type: Rectangle
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: Header
+        Type: Rectangle
+        Children:
+        - Name: HorizontalLayout
+          Type: RowLayout
+          Children:
+          - Name: Title
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../Canvas/VerticalLayout/Header/HorizontalLayout/Title/Text"
+          - Name: MoveTarget
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Close
+            Type: Button
+            Children:
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../../../../Visible@NodeId"
+                    - Name: Value
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                    - Name: ArrayIndex
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#afafaf"
+        - Name: MoveTarget
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../..@NodeId"
+      - Name: HelpPanelLoader
+        Type: PanelLoader
+        Children:
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Cfg_HelpPanel@Pointer"
+        - Name: CurrentPanel
+          Type: NodePointer
+          DataType: NodeId
+          AccessLevel: Read
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+        - Class: Reference
+          Target: ns=5;i=478
+          Direction: Forward
+      - Name: Footer
+        Type: Rectangle
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#afafaf"
+        - Name: MoveTarget
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../..@NodeId"
+        - Name: Version
+          Type: RowLayout
+          Children:
+          - Name: VerticalLayout
+            Type: ColumnLayout
+            Children:
+            - Name: Description
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../Cfg_Description"
+            - Name: NameAndVersion
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../..@BrowseName"
+                  - Name: Source1
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../../Cfg_ObjectVersion"
+          - Name: VerticalLayout1
+            Type: ColumnLayout
+            Children:
+            - Name: Copyright
+              Type: Label
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Name: Cfg_ObjectVersion
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Cfg_Description
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Gateway Summary"}
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 500.0
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 816.0
+- Name: ISAStyleSheet1
+  Id: g=93a37ec5584145791b7de395f7180849
+  Type: StyleSheet
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  DisplayName: {"LocaleId":"en-US","Text":"ISA Style Sheet"}
+  Children:
+  - Name: Radius
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 4.0
+  - Name: InteractiveColorGradientPercent
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: FocusGlowSize
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: AccentColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#afafaf"
+  - Name: AccentTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3f3f3f"
+  - Name: AccentBorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3f3f3f"
+  - Name: TextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3f3f3f"
+  - Name: FocusColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3f3f3f"
+  - Name: BorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#afafaf"
+  - Name: InteractiveColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#e4e4e4"
+  - Name: FontWeight
+    Type: BaseDataVariableType
+    DataType: FontWeightEnum
+    Value: 400
+  - Name: ScreenColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#e0e0e0"
+  - Name: WindowColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#e0e0e0"
+  - Name: InteractiveDropShadowSize
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: FontPixelSize
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 16.0
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+      Children:
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f2f2f2"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.5
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: PressedTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: PressedBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.5
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+      - Name: FontItalic
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 16.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Command
+      Type: ButtonStyle
+      Children:
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 2.0
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6a6a6a"
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#c0c0c0"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6a6a6a"
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: PressedBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: CommandFeedbackActive
+      Type: ButtonStyle
+      Children:
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 4.0
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: PressedBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6a6a6a"
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6a6a6a"
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Navigation
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e0e0e0"
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: HorizontalPaddingPercent
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.75
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+      Children:
+      - Name: SelectionColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e0e0e0"
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 16.0
+      - Name: ActiveBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+      Children:
+      - Name: ActiveSecondaryColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#c0c0c0"
+      - Name: InactiveColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#c0c0c0"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+      - Name: ActivePrimaryColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e0e0e0"
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: TabSpacing
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+    - Name: ISANavPanel
+      Type: NavigationPanelStyle
+      Children:
+      - Name: ActivePrimaryColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e0e0e0"
+      - Name: InactiveColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#c0c0c0"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e0e0e0"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+    - Name: Table
+      Type: AccordionStyle
+      Children:
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 4.0
+    - Name: Data Label
+      Type: LabelStyle
+      Children:
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 14.0
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            Value: "{0} *0.8"
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../FontPixelSize"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 4.0
+    - Name: Live Data
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a4191"
+    - Name: Live Data Primary
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a4191"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 19.0
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            Value: "{0} *1.2"
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../FontPixelSize"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+    - Name: 'De-emphasized Text'
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#919191"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 14.0
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            Value: "{0} *0.8"
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../FontPixelSize"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 4.0
+    - Name: Emphasized Text
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+    - Name: Heading
+      Type: LabelStyle
+      Children:
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+    - Name: Warning
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: Fault
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
+      - Name: ActiveTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: ActiveColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 4.0
+      - Name: ActiveTickColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: ActiveTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
+  - Name: AnimationDuration
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 150
+  - Name: DisabledOpacity
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.4000000059604645
+  - Name: DataInputBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: DataInputTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3b3b3b"
+  - Name: InteractiveBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f0f0f0"
+  - Name: ns=13;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 13
+      },
+      "Body": {
+       "libraryGuid": "8f879552c67d48428e3c5ec6ef776800",
+       "objectGuid": "291eb61433ef49cdf19d53ae39ec9a6c",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

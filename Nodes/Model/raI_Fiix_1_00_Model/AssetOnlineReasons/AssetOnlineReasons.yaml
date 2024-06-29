@@ -1,0 +1,41 @@
+Name: AssetOnlineReasons
+Type: FolderType
+Children:
+- Name: In production
+  Type: AssetOfflineReason
+  Children:
+  - Name: id
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 198265
+  - Name: strName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "In production"
+  - Name: dtUpdated
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-01-30T07:21:55.1240000"
+  - Name: strUuid
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "a08cc957-ab83-4c3c-ac0f-cde27913c82a"
+- Name: On standby
+  Type: AssetOfflineReason
+  Children:
+  - Name: id
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 198266
+  - Name: strName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "On standby"
+  - Name: dtUpdated
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-01-30T07:21:55.1400000"
+  - Name: strUuid
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "be170d49-bb1d-4fda-9ca9-02e4ba95df6d"
